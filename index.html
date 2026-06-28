@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="System Foundry — Enterprise technical training, DevOps transformation, platform engineering, and architecture reviews. We help organizations build better engineering systems." />
+  <meta name="keywords" content="engineering consulting, technical training, DevOps, platform engineering, cloud modernization, architecture review, CI/CD, System Foundry" />
+  <meta property="og:title" content="System Foundry | Build Better Engineering Systems" />
+  <meta property="og:description" content="We help organizations modernize infrastructure, develop engineering talent, and create sustainable technical practices that last." />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="System Foundry | Build Better Engineering Systems" />
+  <meta name="twitter:description" content="Enterprise technical training, DevOps transformation, and engineering consulting." />
+  <title>System Foundry | Engineering Consulting & Technical Training</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/tokens.css" />
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- STATUS BAR ========================================================== -->
+  <div class="status-bar" role="banner" aria-label="System status">
+    <div class="status-bar__inner">
+      <span class="status-bar__id mono">system-foundry // engineering-consulting v1.0</span>
+      <div class="status-bar__indicators">
+        <span class="status-pill status-pill--green" aria-label="System operational">
+          <span class="status-dot" aria-hidden="true"></span>
+          all systems operational
+        </span>
+        <span class="status-pill mono" id="uptime-counter" aria-live="polite" aria-label="Uptime">
+          uptime: <span id="uptime-value">calculating...</span>
+        </span>
+        <span class="status-pill mono" id="utc-clock" aria-live="off">
+          <span id="clock-value">--:--:-- UTC</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- NAVIGATION ========================================================== -->
+  <nav class="nav" role="navigation" aria-label="Primary navigation">
+    <div class="nav__inner">
+      <a href="#" class="nav__brand" aria-label="System Foundry home">
+        <span class="nav__brand-name">System Foundry</span>
+        <span class="nav__brand-sub mono">// engineering</span>
+      </a>
+      <button class="nav__toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Toggle navigation">
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+        <span class="nav__toggle-bar"></span>
+      </button>
+      <ul class="nav__menu" id="nav-menu" role="list">
+        <li><a href="#services" class="nav__link">services</a></li>
+        <li><a href="#process" class="nav__link">process</a></li>
+        <li><a href="#training" class="nav__link">training</a></li>
+        <li><a href="#principles" class="nav__link">principles</a></li>
+        <li><a href="#about" class="nav__link">about</a></li>
+        <li><a href="#contact" class="nav__link nav__link--cta">get started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT ======================================================== -->
+  <main id="main-content">
+
+    <!-- HERO =============================================================== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero__grid-overlay" aria-hidden="true"></div>
+
+        <p class="hero__eyebrow mono">
+          <span class="status-dot status-dot--inline" aria-hidden="true"></span>
+          engineering consulting · technical training
+        </p>
+        <h1 class="hero__heading" id="hero-heading">
+          Build Better<br />
+          <span class="hero__heading-accent">Engineering Systems.</span>
+        </h1>
+        <p class="hero__sub">
+          We help organizations modernize infrastructure, develop engineering talent,
+          and create sustainable technical practices that last.
+        </p>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary btn--lg">Schedule Discovery Call</a>
+          <a href="#services" class="btn btn--ghost btn--lg">Explore Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHO WE HELP ======================================================= -->
+    <section class="section section--alt" id="audience" aria-labelledby="audience-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow section-num">01 // who we help</p>
+          <h2 class="section__heading" id="audience-heading">Engineering Organizations at Every Stage</h2>
+          <p class="section__sub">
+            Whether you're modernizing legacy systems, scaling a platform team,
+            or building engineering capability from the ground up.
+          </p>
+        </div>
+
+        <div class="audience__grid">
+          <div class="audience-card">
+            <div class="audience-card__icon" aria-hidden="true">◈</div>
+            <h3 class="audience-card__title">Enterprise Teams</h3>
+            <p class="audience-card__desc">
+              Large organizations modernizing infrastructure, adopting DevOps practices,
+              and building internal platforms that scale.
+            </p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-card__icon" aria-hidden="true">▦</div>
+            <h3 class="audience-card__title">Engineering Leaders</h3>
+            <p class="audience-card__desc">
+              Directors and VPs building sustainable engineering cultures, improving
+              delivery, and developing technical talent across their organizations.
+            </p>
+          </div>
+          <div class="audience-card">
+            <div class="audience-card__icon" aria-hidden="true">⟳</div>
+            <h3 class="audience-card__title">Growing Teams</h3>
+            <p class="audience-card__desc">
+              Teams transitioning from startup patterns to production-grade engineering
+              practices — CI/CD, observability, infrastructure as code, and operational maturity.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES ========================================================== -->
+    <section class="section" id="services" aria-labelledby="services-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow section-num">02 // what we do</p>
+          <h2 class="section__heading" id="services-heading">Services Built Around Engineering Excellence</h2>
+          <p class="section__sub">
+            Every engagement is designed to increase your organization's engineering
+            capability — not create dependency on ours.
+          </p>
+        </div>
+
+        <div class="services__grid">
+          <div class="service-card">
+            <p class="service-card__num">SVC.01</p>
+            <h3 class="service-card__title">Enterprise Training</h3>
+            <p class="service-card__desc">
+              Hands-on technical education designed around understanding — not memorization.
+              Kubernetes, CI/CD, cloud architecture, and production engineering.
+            </p>
+          </div>
+          <div class="service-card">
+            <p class="service-card__num">SVC.02</p>
+            <h3 class="service-card__title">Platform Engineering</h3>
+            <p class="service-card__desc">
+              Build scalable internal platforms and modern delivery workflows that
+              empower your engineering teams to ship with confidence.
+            </p>
+          </div>
+          <div class="service-card">
+            <p class="service-card__num">SVC.03</p>
+            <h3 class="service-card__title">Cloud Modernization</h3>
+            <p class="service-card__desc">
+              Transition legacy applications toward modern engineering practices
+              with minimal disruption and maximum organizational learning.
+            </p>
+          </div>
+          <div class="service-card">
+            <p class="service-card__num">SVC.04</p>
+            <h3 class="service-card__title">CI/CD Reviews</h3>
+            <p class="service-card__desc">
+              Evaluate deployment pipelines for reliability, maintainability,
+              scalability, and operational maturity.
+            </p>
+          </div>
+          <div class="service-card">
+            <p class="service-card__num">SVC.05</p>
+            <h3 class="service-card__title">Architecture Reviews</h3>
+            <p class="service-card__desc">
+              Independent technical assessments for cloud infrastructure, software
+              delivery systems, and engineering organization design.
+            </p>
+          </div>
+          <div class="service-card">
+            <p class="service-card__num">SVC.06</p>
+            <h3 class="service-card__title">Engineering Coaching</h3>
+            <p class="service-card__desc">
+              Develop senior engineers and technical leaders through mentorship,
+              systems thinking, and engineering leadership principles.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW WE WORK ======================================================= -->
+    <section class="section section--alt" id="process" aria-labelledby="process-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow section-num">03 // how we work</p>
+          <h2 class="section__heading" id="process-heading">A Deliberate, Structured Approach</h2>
+          <p class="section__sub">
+            Every engagement follows a clear process designed to understand your systems,
+            identify leverage points, and create lasting improvements.
+          </p>
+        </div>
+
+        <div class="process__grid">
+          <div class="process-step">
+            <div class="process-step__num">01</div>
+            <h3 class="process-step__title">Discovery</h3>
+            <p class="process-step__desc">
+              We listen. Understand your systems, your team, your constraints,
+              and what success looks like for your organization.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">02</div>
+            <h3 class="process-step__title">Assessment</h3>
+            <p class="process-step__desc">
+              Technical review of your current architecture, delivery pipelines,
+              operational practices, and team capabilities.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">03</div>
+            <h3 class="process-step__title">Engagement</h3>
+            <p class="process-step__desc">
+              Hands-on work — training, architecture, implementation, or coaching —
+              tailored to your specific environment and goals.
+            </p>
+          </div>
+          <div class="process-step">
+            <div class="process-step__num">04</div>
+            <h3 class="process-step__title">Transfer</h3>
+            <p class="process-step__desc">
+              Knowledge transfer and documentation. Your team owns the outcome.
+              No vendor lock-in. No ongoing dependency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRAINING ========================================================== -->
+    <section class="section" id="training" aria-labelledby="training-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow section-num">04 // training</p>
+          <h2 class="section__heading" id="training-heading">We Don't Teach Software. We Teach Engineers.</h2>
+          <p class="section__sub">
+            The goal isn't memorizing commands. It's building the kind of understanding
+            that transfers across tools, teams, and career stages.
+          </p>
+        </div>
+
+        <div class="why__grid">
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">▤</div>
+            <h3 class="why-card__title">Enterprise Workshops</h3>
+            <p class="why-card__desc">
+              Multi-day, instructor-led workshops for engineering teams. Kubernetes,
+              Docker, CI/CD, GitOps, Infrastructure as Code, Cloud Architecture,
+              Observability, and Production Readiness.
+            </p>
+            <div class="tag-row" style="margin-top: var(--space-5);">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Docker</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">GitOps</span>
+              <span class="tag">IaC</span>
+              <span class="tag">Observability</span>
+            </div>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">◎</div>
+            <h3 class="why-card__title">Technical Curriculum Development</h3>
+            <p class="why-card__desc">
+              Custom training programs designed for your organization's specific technology
+              stack, engineering maturity, and learning goals. Principles-first curriculum
+              that builds lasting capability.
+            </p>
+            <div class="tag-row" style="margin-top: var(--space-5);">
+              <span class="tag">Custom Programs</span>
+              <span class="tag">Enterprise</span>
+              <span class="tag">Scalable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY CLIENTS CHOOSE US ============================================= -->
+    <section class="section section--alt" id="why" aria-labelledby="why-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow section-num">05 // why system foundry</p>
+          <h2 class="section__heading" id="why-heading">Why Organizations Choose Us</h2>
+        </div>
+
+        <div class="why__grid">
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">◇</div>
+            <h3 class="why-card__title">Production Experience</h3>
+            <p class="why-card__desc">
+              We've built and operated production systems across government, automotive,
+              energy, and enterprise SaaS. Our recommendations come from real operational
+              experience — not theory.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">⟳</div>
+            <h3 class="why-card__title">Knowledge Transfer</h3>
+            <p class="why-card__desc">
+              Every engagement is designed to leave your team stronger. We don't create
+              dependency. We build capability that stays when we leave.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">▦</div>
+            <h3 class="why-card__title">Principles Over Tools</h3>
+            <p class="why-card__desc">
+              Tools change. Platforms evolve. The engineering principles that make systems
+              reliable, maintainable, and scalable remain consistent. That's what we teach.
+            </p>
+          </div>
+          <div class="why-card">
+            <div class="why-card__icon" aria-hidden="true">◈</div>
+            <h3 class="why-card__title">Enterprise Context</h3>
+            <p class="why-card__desc">
+              We understand that enterprise environments have real constraints — compliance,
+              legacy systems, change management, and organizational complexity. Our approach
+              respects those realities.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ENGINEERING PRINCIPLES ============================================ -->
+    <section class="section" id="principles" aria-labelledby="principles-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow section-num">06 // engineering principles</p>
+          <h2 class="section__heading" id="principles-heading">Technology Changes. Engineering Principles Endure.</h2>
+        </div>
+
+        <div class="principles__grid">
+          <div class="principle-card">
+            <p class="principle-card__text">
+              Automation should remove repetition — not understanding.
+            </p>
+          </div>
+          <div class="principle-card">
+            <p class="principle-card__text">
+              Documentation is operational empathy.
+            </p>
+          </div>
+          <div class="principle-card">
+            <p class="principle-card__text">
+              Simple systems outperform clever systems.
+            </p>
+          </div>
+          <div class="principle-card">
+            <p class="principle-card__text">
+              Knowledge trapped in one engineer is organizational risk.
+            </p>
+          </div>
+          <div class="principle-card">
+            <p class="principle-card__text">
+              Build people. The technology will follow.
+            </p>
+          </div>
+          <div class="principle-card">
+            <p class="principle-card__text">
+              Every system tells a story about how it was designed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER ======================================================== -->
+    <section class="section section--alt" aria-labelledby="cta-heading">
+      <div class="container">
+        <div class="cta-banner">
+          <p class="section__eyebrow section-num" style="margin-bottom: var(--space-6);">
+            build target // organizational excellence
+          </p>
+          <h2 class="cta-banner__heading" id="cta-heading">
+            Ready to Build Better Engineering Systems?
+          </h2>
+          <p class="cta-banner__sub">
+            Whether you need training, architecture guidance, or help modernizing
+            your engineering practices — let's talk about what's possible.
+          </p>
+          <div class="cta-banner__actions">
+            <a href="#contact" class="btn btn--primary btn--lg">Schedule Discovery Call</a>
+            <a href="https://dpugh143.github.io/dwayne.pugh/" target="_blank" rel="noopener" class="btn btn--ghost btn--lg">Meet the Founder</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ============================================================= -->
+    <section class="section" id="about" aria-labelledby="about-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow section-num">07 // about</p>
+          <h2 class="section__heading" id="about-heading">Founded on Engineering Experience</h2>
+        </div>
+
+        <div class="why__grid">
+          <div>
+            <p style="color: var(--color-text-secondary); line-height: var(--leading-relaxed); margin-bottom: var(--space-5);">
+              System Foundry was founded by
+              <a href="https://dpugh143.github.io/dwayne.pugh/" target="_blank" rel="noopener" style="color: var(--color-gold);">Dwayne Pugh</a>
+              — a systems engineer and technical educator with more than a decade of experience
+              building production systems across government, automotive technology, critical
+              infrastructure, and enterprise platforms.
+            </p>
+            <p style="color: var(--color-text-secondary); line-height: var(--leading-relaxed); margin-bottom: var(--space-5);">
+              The company exists to help organizations build better engineering systems by
+              developing both their technology and their people. We believe the strongest
+              technical organizations are the ones that continuously grow their engineers'
+              capabilities — not just their software.
+            </p>
+            <p style="color: var(--color-text-secondary); line-height: var(--leading-relaxed);">
+              Every engagement is guided by the same principle: help people understand <em>why</em>
+              systems work — not simply <em>how</em> to operate them.
+            </p>
+          </div>
+          <div class="why-card" style="border-left: 2px solid var(--color-gold);">
+            <p class="service-card__num">// founder</p>
+            <h3 class="why-card__title" style="margin-bottom: var(--space-4);">Dwayne Pugh</h3>
+            <p class="why-card__desc" style="margin-bottom: var(--space-5);">
+              Systems Engineer · Technical Educator · Engineering Consultant
+            </p>
+            <p class="why-card__desc" style="margin-bottom: var(--space-5);">
+              10+ years building production systems. Enterprise infrastructure, cloud platforms,
+              DevOps, and technical education. Currently focused on helping organizations build
+              sustainable engineering practices.
+            </p>
+            <div class="tag-row">
+              <span class="tag">Kubernetes</span>
+              <span class="tag">AWS</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">CI/CD</span>
+              <span class="tag">OpenShift</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT =========================================================== -->
+    <section class="section section--alt section--contact" id="contact" aria-labelledby="contact-heading">
+      <div class="container">
+        <div class="section__header">
+          <p class="section__eyebrow section-num">08 // contact</p>
+          <h2 class="section__heading" id="contact-heading">Let's Build Something Better.</h2>
+          <p class="section__sub">
+            Whether you're modernizing infrastructure, developing engineering talent,
+            or designing training programs — we'd like to hear about what you're building.
+          </p>
+        </div>
+
+        <div class="contact__grid">
+          <a href="https://linkedin.com/in/dpugh143" target="_blank" rel="noopener" class="contact-card">
+            <p class="contact-card__label mono">// connect</p>
+            <p class="contact-card__title">LinkedIn</p>
+            <p class="contact-card__value">linkedin.com/in/dpugh143</p>
+          </a>
+          <a href="mailto:dwayne.pugh@icloud.com" class="contact-card">
+            <p class="contact-card__label mono">// direct</p>
+            <p class="contact-card__title">Email</p>
+            <p class="contact-card__value">dwayne.pugh@icloud.com</p>
+          </a>
+          <a href="https://github.com/dpugh143" target="_blank" rel="noopener" class="contact-card">
+            <p class="contact-card__label mono">// code</p>
+            <p class="contact-card__title">GitHub</p>
+            <p class="contact-card__value">github.com/dpugh143</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER ============================================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__inner">
+      <div class="footer__left">
+        <p class="footer__brand-name">System Foundry</p>
+        <p class="footer__tagline">Engineering Consulting · Technical Training</p>
+        <p class="footer__personal">
+          Founded by <a href="https://dpugh143.github.io/dwayne.pugh/" target="_blank" rel="noopener">Dwayne Pugh</a>
+        </p>
+      </div>
+      <div class="footer__links">
+        <div>
+          <p class="footer__col-title">Services</p>
+          <ul class="footer__col-list" role="list">
+            <li><a href="#services">Training</a></li>
+            <li><a href="#services">Platform Engineering</a></li>
+            <li><a href="#services">Architecture Reviews</a></li>
+            <li><a href="#services">Cloud Modernization</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer__col-title">Connect</p>
+          <ul class="footer__col-list" role="list">
+            <li><a href="https://linkedin.com/in/dpugh143" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/dpugh143" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://dpugh143.github.io/dwayne.pugh/" target="_blank" rel="noopener">Personal Site</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__right">
+        <p class="footer__copy">&copy; <span id="footer-year"></span> System Foundry</p>
+        <p class="footer__build">// build: system-foundry v1.0</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
