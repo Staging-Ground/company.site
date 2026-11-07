@@ -1,6 +1,7 @@
 'use strict';
 
-const LAUNCH_DATE = new Date('2026-06-01T00:00:00Z');
+// Staging Ground name and domain locked in. Drives the status-bar uptime counter.
+const LAUNCH_DATE = new Date('2026-11-05T00:00:00Z');
 const CLOCK_INTERVAL_MS = 1000;
 const NAV_INTERSECT_THRESHOLD = 0.25;
 
@@ -118,7 +119,7 @@ const initScrollReveal = () => {
 
   const targets = $$(
     '.audience-card, .service-card, .process-step, .why-card, ' +
-    '.principle-card, .contact-card, .cta-banner'
+    '.principle-card, .contact-card, .cta-banner, .stat-card'
   );
 
   targets.forEach((el) => {

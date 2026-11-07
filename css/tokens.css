@@ -1,14 +1,19 @@
 /*
- * tokens.css — Design Token System (Company Site)
+ * tokens.css — Design Token System (Staging Ground)
  * =================================================
- * Shared foundation with dwayne.pugh personal site.
- * Same grid, typography, spacing, radius, and motion.
+ * Shares grid, typography, spacing, radius, and motion with the
+ * dwayne.pugh personal site, but NOT its gold palette: the company
+ * brand stands on its own.
  *
- * Differentiators:
- *   - Blue (#4D9EFF) replaces gold as primary accent
- *   - Green (#32A46D) for success/health indicators
- *   - Gold (#C89A2B) appears sparingly — section accents only
- *   - Slightly lifted surface colors for the "workshop" feel
+ * Palette "Staging → Production" (chosen Nov 6, 2026):
+ *   - Amber  (#FFB020) = staging. Primary brand color: CTAs, links, highlights.
+ *   - Green  (#3DD68C) = production. Proof and outcomes: stats, principles,
+ *                        founder accents, healthy-status indicators.
+ *   - Near-black surfaces for the SRE-dashboard feel.
+ *   The brand promise in color: we take teams from amber to green.
+ *
+ *   Keep amber bright and yellow-leaning so it never reads as the
+ *   personal site's muted gold (#C8860A).
  */
 
 :root {
@@ -23,17 +28,16 @@
   /* -------------------------------------------------------------------
      Color: Accents
   ------------------------------------------------------------------- */
-  --color-blue:           #4D9EFF;
-  --color-blue-dim:       #3A7ACC;
-  --color-blue-glow:      rgba(77, 158, 255, 0.12);
+  /* Staging — primary brand color */
+  --color-amber:          #FFB020;
+  --color-amber-dim:      #D99413;
+  --color-amber-glow:     rgba(255, 176, 32, 0.12);
 
-  --color-green:          #32A46D;
-  --color-green-dim:      #267A52;
-  --color-green-glow:     rgba(50, 164, 109, 0.12);
-
-  --color-gold:           #C89A2B;
-  --color-gold-dim:       #9A7520;
-  --color-gold-glow:      rgba(200, 154, 43, 0.10);
+  /* Production — proof and outcomes */
+  --color-green-bright:   #3DD68C;
+  --color-green:          #2FB574;
+  --color-green-dim:      #23885A;
+  --color-green-glow:     rgba(61, 214, 140, 0.12);
 
   --color-red:            #8B3A3A;
   --color-red-dim:        #6B2A2A;
@@ -44,9 +48,8 @@
   --color-text-primary:   #F5F7FA;
   --color-text-secondary: #A7B0BA;
   --color-text-tertiary:  #5C6370;
-  --color-text-blue:      var(--color-blue);
-  --color-text-green:     #3DBF7E;
-  --color-text-gold:      var(--color-gold);
+  --color-text-amber:     var(--color-amber);
+  --color-text-green:     var(--color-green-bright);
 
   /* -------------------------------------------------------------------
      Color: Borders & Dividers
@@ -54,15 +57,14 @@
   --color-border-subtle:  rgba(255, 255, 255, 0.06);
   --color-border-default: rgba(255, 255, 255, 0.10);
   --color-border-strong:  rgba(255, 255, 255, 0.18);
-  --color-border-blue:    rgba(77, 158, 255, 0.30);
-  --color-border-green:   rgba(50, 164, 109, 0.30);
-  --color-border-gold:    rgba(200, 154, 43, 0.25);
+  --color-border-amber:   rgba(255, 176, 32, 0.35);
+  --color-border-green:   rgba(61, 214, 140, 0.30);
 
   /* -------------------------------------------------------------------
      Color: Status
   ------------------------------------------------------------------- */
-  --color-status-green:   #3DBF7E;
-  --color-status-amber:   #C89A2B;
+  --color-status-green:   var(--color-green-bright);
+  --color-status-amber:   var(--color-amber);
   --color-status-red:     #B54040;
 
   /* -------------------------------------------------------------------
