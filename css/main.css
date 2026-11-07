@@ -1,8 +1,8 @@
 /*
- * main.css — Component & Layout Styles (Company Site)
+ * main.css — Component & Layout Styles (Staging Ground)
  * =====================================================
  * Shared design language with the personal site.
- * Blue-accented, action-oriented, service-focused.
+ * Amber (staging) primary, green (production) accent.
  *
  * Sections:
  *   1.  Reset & Base
@@ -63,7 +63,7 @@ img {
 }
 
 a {
-  color: var(--color-blue);
+  color: var(--color-amber);
   text-decoration: none;
   transition: color var(--transition-base);
 }
@@ -73,7 +73,7 @@ a:hover {
 }
 
 a:focus-visible {
-  outline: 2px solid var(--color-blue);
+  outline: 2px solid var(--color-amber);
   outline-offset: 3px;
   border-radius: var(--radius-sm);
 }
@@ -93,9 +93,9 @@ strong {
   letter-spacing: var(--tracking-wide);
 }
 
-.text--blue  { color: var(--color-blue); }
+.text--amber  { color: var(--color-amber); }
 .text--green { color: var(--color-text-green); }
-.text--gold  { color: var(--color-gold); }
+.text--prod  { color: var(--color-green-bright); }
 .text--muted { color: var(--color-text-secondary); }
 
 .container {
@@ -104,7 +104,7 @@ strong {
   padding-inline: var(--container-pad);
 }
 
-/* Buttons — blue primary for the company site */
+/* Buttons — amber primary (staging) */
 .btn {
   display: inline-flex;
   align-items: center;
@@ -129,14 +129,14 @@ strong {
 }
 
 .btn--primary {
-  background-color: var(--color-blue);
+  background-color: var(--color-amber);
   color: #0B0D10;
-  border-color: var(--color-blue);
+  border-color: var(--color-amber);
 }
 
 .btn--primary:hover {
-  background-color: #6BB3FF;
-  border-color: #6BB3FF;
+  background-color: #FFC24D;
+  border-color: #FFC24D;
   color: #0B0D10;
 }
 
@@ -151,8 +151,8 @@ strong {
 }
 
 .btn--ghost:hover {
-  border-color: var(--color-blue);
-  color: var(--color-blue);
+  border-color: var(--color-amber);
+  color: var(--color-amber);
 }
 
 .btn--ghost:visited {
@@ -176,10 +176,10 @@ strong {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   letter-spacing: var(--tracking-wide);
-  color: var(--color-blue-dim);
-  border: 1px solid var(--color-border-blue);
+  color: var(--color-amber-dim);
+  border: 1px solid var(--color-border-amber);
   border-radius: 20px;
-  background-color: var(--color-blue-glow);
+  background-color: var(--color-amber-glow);
   white-space: nowrap;
 }
 
@@ -234,7 +234,7 @@ strong {
   position: absolute;
   top: -100%;
   left: var(--space-4);
-  background-color: var(--color-blue);
+  background-color: var(--color-amber);
   color: #0B0D10;
   padding: var(--space-2) var(--space-4);
   border-radius: var(--radius-md);
@@ -336,7 +336,7 @@ strong {
 }
 
 .nav__brand:hover .nav__brand-name {
-  color: var(--color-blue);
+  color: var(--color-amber);
 }
 
 .nav__brand:visited {
@@ -374,8 +374,8 @@ strong {
 }
 
 .nav__link:hover {
-  color: var(--color-blue);
-  border-bottom-color: var(--color-blue);
+  color: var(--color-amber);
+  border-bottom-color: var(--color-amber);
 }
 
 .nav__link:visited {
@@ -383,14 +383,14 @@ strong {
 }
 
 .nav__link.is-active {
-  color: var(--color-blue);
-  border-bottom-color: var(--color-blue);
+  color: var(--color-amber);
+  border-bottom-color: var(--color-amber);
 }
 
 .nav__link--cta {
   color: #0B0D10;
-  background-color: var(--color-blue);
-  border: 1px solid var(--color-blue);
+  background-color: var(--color-amber);
+  border: 1px solid var(--color-amber);
   padding: var(--space-1) var(--space-4);
   border-radius: var(--radius-sm);
   border-bottom: none;
@@ -406,8 +406,8 @@ strong {
 }
 
 .nav__link--cta:hover {
-  background-color: #6BB3FF;
-  border-color: #6BB3FF;
+  background-color: #FFC24D;
+  border-color: #FFC24D;
 }
 
 .nav__link--cta.is-active {
@@ -436,7 +436,7 @@ strong {
 }
 
 .nav__toggle:hover .nav__toggle-bar {
-  background-color: var(--color-blue);
+  background-color: var(--color-amber);
 }
 
 
@@ -471,7 +471,7 @@ strong {
 }
 
 .hero__eyebrow {
-  color: var(--color-blue);
+  color: var(--color-amber);
   font-size: var(--text-xs);
   letter-spacing: var(--tracking-widest);
   text-transform: uppercase;
@@ -491,7 +491,7 @@ strong {
 }
 
 .hero__heading-accent {
-  color: var(--color-blue);
+  color: var(--color-amber);
   font-weight: var(--weight-medium);
 }
 
@@ -578,13 +578,13 @@ strong {
 }
 
 .audience-card:hover {
-  border-color: var(--color-border-blue);
+  border-color: var(--color-border-amber);
   background-color: var(--color-bg-elevated);
 }
 
 .audience-card__icon {
   font-size: var(--text-2xl);
-  color: var(--color-blue);
+  color: var(--color-amber);
   margin-bottom: var(--space-5);
   font-family: var(--font-mono);
 }
@@ -616,7 +616,7 @@ strong {
 .service-card {
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border-subtle);
-  border-top: 2px solid var(--color-border-blue);
+  border-top: 2px solid var(--color-border-amber);
   border-radius: var(--radius-lg);
   padding: var(--space-8);
   transition: border-color var(--transition-base),
@@ -625,8 +625,8 @@ strong {
 }
 
 .service-card:hover {
-  border-color: var(--color-border-blue);
-  border-top-color: var(--color-blue);
+  border-color: var(--color-border-amber);
+  border-top-color: var(--color-amber);
   background-color: var(--color-bg-elevated);
   transform: translateY(-2px);
 }
@@ -682,9 +682,9 @@ strong {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--color-blue-glow);
-  border: 1px solid var(--color-border-blue);
-  color: var(--color-blue);
+  background-color: var(--color-amber-glow);
+  border: 1px solid var(--color-border-amber);
+  color: var(--color-amber);
   font-family: var(--font-mono);
   font-size: var(--text-sm);
   font-weight: var(--weight-medium);
@@ -718,14 +718,14 @@ strong {
 .principle-card {
   background-color: var(--color-bg-surface);
   border: 1px solid var(--color-border-subtle);
-  border-left: 2px solid var(--color-gold);
+  border-left: 2px solid var(--color-green-bright);
   border-radius: var(--radius-lg);
   padding: var(--space-6);
   transition: border-color var(--transition-base), background-color var(--transition-base);
 }
 
 .principle-card:hover {
-  border-color: var(--color-border-gold);
+  border-color: var(--color-border-green);
   background-color: var(--color-bg-elevated);
 }
 
@@ -802,7 +802,7 @@ strong {
   left: 0;
   right: 0;
   height: 2px;
-  background: linear-gradient(90deg, var(--color-blue), var(--color-green), var(--color-blue));
+  background: linear-gradient(90deg, var(--color-amber), var(--color-green-bright)); /* staging → production */
 }
 
 .cta-banner__heading {
@@ -864,8 +864,8 @@ strong {
 }
 
 .contact-card:hover {
-  border-color: var(--color-border-blue);
-  background-color: var(--color-blue-glow);
+  border-color: var(--color-border-amber);
+  background-color: var(--color-amber-glow);
   color: inherit;
 }
 
@@ -881,7 +881,7 @@ strong {
 .contact-card__title {
   font-size: var(--text-xl);
   font-weight: var(--weight-medium);
-  color: var(--color-blue);
+  color: var(--color-amber);
   margin-bottom: var(--space-2);
 }
 
@@ -931,7 +931,7 @@ strong {
 }
 
 .footer__personal a {
-  color: var(--color-gold);
+  color: var(--color-green-bright);
 }
 
 .footer__personal a:hover {
@@ -967,7 +967,7 @@ strong {
 }
 
 .footer__col-list a:hover {
-  color: var(--color-blue);
+  color: var(--color-amber);
 }
 
 .footer__col-list a:visited {
@@ -989,6 +989,313 @@ strong {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
   color: var(--color-text-tertiary);
+}
+
+
+/* ==========================================================================
+   15a. Why We Teach This — stats
+   ========================================================================== */
+
+.stat-card {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-top: 2px solid var(--color-green-bright);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+}
+
+.stat-card__num {
+  font-family: var(--font-mono);
+  font-size: var(--text-5xl);
+  font-weight: var(--weight-medium);
+  color: var(--color-green-bright);
+  line-height: 1;
+  margin-bottom: var(--space-4);
+}
+
+.stat-card__desc {
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+}
+
+.stat-card__desc sup,
+.source-note sup {
+  font-family: var(--font-mono);
+  font-size: 0.65em;
+  color: var(--color-text-tertiary);
+}
+
+.source-note {
+  margin-top: var(--space-6);
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  line-height: var(--leading-relaxed);
+}
+
+
+/* ==========================================================================
+   15b. About
+   ========================================================================== */
+
+.about__copy p {
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-5);
+}
+
+.about__copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about__copy em {
+  color: var(--color-text-primary);
+}
+
+.link--prod,
+.link--prod:visited {
+  color: var(--color-green-bright);
+}
+
+.founder-card {
+  border-left: 2px solid var(--color-green-bright);
+}
+
+.founder-card__role {
+  margin-bottom: var(--space-5);
+}
+
+.founder-card__quote {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-light);
+  color: var(--color-text-primary);
+  line-height: var(--leading-snug);
+  margin-bottom: var(--space-6);
+  padding-left: var(--space-4);
+  border-left: 1px solid var(--color-border-green);
+}
+
+.founder-card__link {
+  display: inline-block;
+  margin-top: var(--space-6);
+  font-size: var(--text-xs);
+  color: var(--color-green-bright);
+}
+
+.founder-card__link:visited {
+  color: var(--color-green-bright);
+}
+
+
+/* ==========================================================================
+   15c. Contact form
+   ========================================================================== */
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.contact__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 1fr);
+  gap: var(--space-6);
+  max-width: 1000px;
+  margin-inline: auto;
+}
+
+.contact__aside {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.contact__aside .contact-card {
+  text-align: left;
+}
+
+.contact-form {
+  background-color: var(--color-bg-surface);
+  border: 1px solid var(--color-border-subtle);
+  border-top: 2px solid var(--color-amber);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-5);
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.form-field label {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: var(--tracking-wide);
+  color: var(--color-text-secondary);
+}
+
+.form-req {
+  color: var(--color-green-bright);
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+  width: 100%;
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-base);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-md);
+  padding: var(--space-3) var(--space-4);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
+}
+
+.form-field select {
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: linear-gradient(45deg, transparent 50%, var(--color-text-secondary) 50%),
+                    linear-gradient(135deg, var(--color-text-secondary) 50%, transparent 50%);
+  background-position: calc(100% - 20px) 50%, calc(100% - 15px) 50%;
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  padding-right: var(--space-10);
+}
+
+.form-field textarea {
+  resize: vertical;
+  min-height: 8rem;
+  line-height: var(--leading-normal);
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+  outline: none;
+  border-color: var(--color-amber);
+  box-shadow: 0 0 0 3px var(--color-amber-glow);
+}
+
+.form-field [aria-invalid="true"] {
+  border-color: var(--color-status-red);
+}
+
+.form-check {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-text-secondary);
+  line-height: var(--leading-snug);
+  cursor: pointer;
+}
+
+.form-check input {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  accent-color: var(--color-amber);
+}
+
+.contact-form .btn:disabled {
+  opacity: 0.6;
+  cursor: wait;
+}
+
+.form-status {
+  font-size: var(--text-sm);
+  line-height: var(--leading-snug);
+  min-height: 1.4em;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+.form-status[data-state="success"] {
+  color: var(--color-text-green);
+}
+
+.form-status[data-state="error"] {
+  color: #E07070;
+}
+
+.form-fineprint {
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  line-height: var(--leading-relaxed);
+}
+
+
+/* ==========================================================================
+   15d. Legal pages (privacy)
+   ========================================================================== */
+
+.legal {
+  padding-top: calc(28px + 52px + var(--space-16));
+  padding-bottom: var(--space-24);
+}
+
+.legal .container {
+  max-width: 760px;
+}
+
+.legal h1 {
+  font-size: clamp(var(--text-3xl), 4vw, var(--text-5xl));
+  font-weight: var(--weight-light);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-3);
+}
+
+.legal h2 {
+  font-size: var(--text-xl);
+  font-weight: var(--weight-medium);
+  margin-top: var(--space-12);
+  margin-bottom: var(--space-4);
+}
+
+.legal p,
+.legal li {
+  color: var(--color-text-secondary);
+  line-height: var(--leading-relaxed);
+  margin-bottom: var(--space-4);
+}
+
+.legal ul {
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-4);
+}
+
+.legal li {
+  margin-bottom: var(--space-2);
+}
+
+.legal strong {
+  color: var(--color-text-primary);
+}
+
+.legal__meta {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  letter-spacing: var(--tracking-wide);
 }
 
 
@@ -1024,8 +1331,18 @@ strong {
     grid-template-columns: 1fr;
   }
 
-  .contact__grid {
+  .contact__grid,
+  .contact__layout {
     grid-template-columns: 1fr;
+  }
+
+  .contact__aside {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .contact__aside .contact-card {
+    flex: 1 1 200px;
   }
 
   .footer__inner {
@@ -1100,5 +1417,17 @@ strong {
   .btn--lg {
     width: 100%;
     justify-content: center;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form {
+    padding: var(--space-6) var(--space-5);
+  }
+
+  .stat-card__num {
+    font-size: var(--text-4xl);
   }
 }
